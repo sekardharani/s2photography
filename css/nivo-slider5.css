@@ -1,0 +1,62 @@
+/*
+ * jQuery Nivo Slider v3.2
+ * http://nivo.dev7studios.com
+ *
+ * Copyright 2012, Dev7studios
+ * Free to use and abuse under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+ 
+/* The Nivo Slider styles */
+
+.slider-main{ position:relative; }
+.nivoSlider { position:relative; width:100%; height:auto; overflow:hidden;	}
+.nivoSlider img { position:absolute; top:0px; max-width: none; }
+.nivo-main-image { display:block !important; position:relative !important; width:100% !important; }
+
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink { position:absolute; top:0px; left:0px; width:100%; height:100%; border:0; padding:0; margin:0; z-index:6; display:none; background:white; filter:alpha(opacity=0); opacity:0; }
+
+/* The slices and boxes in the Slider */
+.nivo-slice { display:block; position:absolute; z-index:5; height:100%; top:0; }
+.nivo-box { display:block; position:absolute; z-index:5; overflow:hidden; }
+.nivo-box img { display:block; }
+
+/* Caption styles */
+.nivo-html-caption { display:none; }
+
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a { border:0 none; display:block; height:60px; text-indent:-9999px; -webkit-transition:all 200ms ease-in-out 0s; transition:all 200ms ease-in-out 0s; width:60px; position:absolute; top:50%; z-index:10; cursor:pointer; -webkit-transform: translateY(-50%); transform: translateY(-50%); border-radius:50px; }
+a.nivo-nextNav { right:25px; background:url(../images/slide-nav.png) no-repeat -94px center rgba(0,0,0,0.8); }
+a.nivo-prevNav { left:25px; background:url(../images/slide-nav.png) no-repeat -14px center rgba(0,0,0,0.8); }
+	
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav { right:auto; padding:0; position: absolute; width:100%; bottom:6%; z-index:9; text-align:center; line-height:10px; }
+.nivo-controlNav a { cursor:pointer; border: 0 none; display:inline-block; margin:0 5px 0 3px; text-indent: -9999px; width:40px; height:10px; }
+.nivo-controlNav a.active { font-weight:bold; }
+
+/* Nivo Caption */
+.nivo-caption{ position:absolute; top:60%; z-index:8; width:56%; -webkit-transform:translateY(-60%); -ms-transform:translateY(-60%); transform:translateY(-60%); -webkit-box-sizing:border-box; box-sizing:border-box; }
+.nivo-caption h2{ font:700 63px/1.2 'Montserrat'; color:#f49c14; text-transform:uppercase; display:block; position:relative; margin:0 0 15px; }
+.nivo-caption a h2{ display:block; }
+.nivo-caption h5{ font:700 20px/1.2 'Montserrat'; color:#ffffff; text-transform:uppercase; }
+.nivo-caption h5.letter-space{ letter-spacing:12px; }
+.nivo-caption p{ font:400 15px/1.6 'Karla'; margin:30px 0; width:84%; color:#ffffff; }
+
+.sep-border{ width:200px; height:2px; background-color:#f49c14; }
+
+/* Caption Text Styles Left */
+#slider.caption-text-left .nivo-caption{ text-align:left; left:13%; }
+
+/* Caption Text Styles Center */
+#slider.caption-text-center .nivo-caption{ text-align:center; left:0; right:0; margin:0 auto; }
+
+#slider.caption-text-center .nivo-caption p{ margin:30px auto; }
+#slider.caption-text-center a.sliderbtn{ margin:0 auto; }
+#slider.caption-text-center .sep-border{ margin:0 auto; }
+
+/* Caption Text Styles Right */
+#slider.caption-text-right .nivo-caption{ text-align:right; right:13%; }
+#slider.caption-text-right .nivo-caption p{ float:right; }
+#slider.caption-text-right a.sliderbtn{ float:right; }
+#slider.caption-text-right .sep-border{ float:right; }
